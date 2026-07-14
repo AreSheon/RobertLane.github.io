@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<!--with help from https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR - netninja-->
+
+<!--12 collum grid system -> width = 1-12 collums in width-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <title>my beutiful website</title>
+    <style>
+      section{
+        padding: 20px 0;
+      }
+    </style>
+
+
+  </head>
+    <body>
+      <!--navbar-->
+      <nav class="navbar navbar-expand-md"><!--expands to no dropdown frin medium size screens-->
+        <div class="container-xxl">
+          <a href="#intro" class="navbar-brand">
+            <span class="fw-bold text-secondary">
+              Robert Lane - computing student at falmouth university
+            </span>
+          </a>
+
+          <!--toggle button mobile nav dropdown-->
+          <button class="navbar-toggler" type = "button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <!--navbar links-->
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#currentProjects">current</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pastProjects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          <!--navbar links-->
+          </div>
+        </div>
+      </nav>
+
+      <!--socials bar, navigation(blogs? portfolio, cv)-->
+
+      <!--main image & intro text-->
+      <!--image of me :) name status, software experience/expertise, some contacts?-->
+
+      <!--give us sections :)-->
+      <section id="intro">
+
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col-md-2 text-center">
+              <img class ="img-fluid" src="assets/placeholderPerson.png" alt="placeholder image">
+            </div>
+            <div class="col-md-4 align-items-center">
+              <!--Title-->
+              <!--<h2>
+              <div class="display-5">Robert Lane</div>
+              </h2>-->
+              <div class="text-muted">
+                <span class = "fw-bold text-dark">Hi!</span><!--change when change colours-->
+                I am a Computer science undergrad passionate about software engineering and systems design, within game development.
+                Although my interest tends to be backend, am capable of frontend development too.
+              </div>
+            </div>
+            <!--language experience-->
+            <div class="col-md-6 align-self-center">
+              <div class="row justify-content-center">
+                <!--c++-->
+                <div class="col-2 text-bottom">
+                  <div class="row">
+                    <i class="devicon-cplusplus-plain display-2">
+                    </i>
+                  </div>
+                  <div class="row">
+                    <div class = "display-7 text-center ">
+                      1y
+                    </div>
+                  </div>
+                </div>
+                <!--c#-->
+                <div class="col-2 text-bottom">
+                    <div class="row">
+                      <i class="devicon-csharp-plain display-2 text-center">
+                      </i>
+                    </div>
+                    <div class="row">
+                      <div class = "display-7 text-center">
+                        5y
+                      </div>
+                    </div>
+                </div>
+                <!--python-->
+                <div class="col-2 text-bottom">
+                  <div class="row">
+                    <i class="devicon-python-plain display-2">
+                    </i>
+                  </div>
+                  <div class="row">
+                    <div class = "display-7 text-center">
+                     5y
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <!--unity-->
+                <div class="col-2 text-bottom">
+                  <div class="row">
+                  <i class="devicon-unity-plain display-2">
+                  </i>
+                  </div>
+                  <div class="row">
+                  <div class = "display-7 text-center">
+                    5y
+                  </div>
+                  </div>
+                </div>
+                <!--unreal-->
+                <div class="col-2 text-bottom">
+                  <div class="row">
+                  <i class="devicon-unrealengine-plain display-2">
+                  </i>
+                  </div>
+                  <div class="row">
+                  <div class = "display-7 text-center">
+                    1y
+                  </div>
+                  </div>
+                </div>
+              <!--monogame-->
+                <div class="col-2 text-bottom">
+                  <div class="row">
+                  <i class="devicon-monogame-plain display-2">
+                  </i>
+                  </div>
+                  <div class="row">
+                  <div class = "display-7 text-center">
+                    &lt;1y
+                  </div>
+                  </div>
+                </div>
+                <!--git-->
+                <div class="col-2 text-bottom">
+                  <div class="row">
+                  <i class="devicon-git-plain display-2">
+                  </i>
+                  </div>
+                  <div class="row">
+                  <div class = "display-7 text-center">
+                    2y
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--current projects-->
+      <section class = "bg-body-tertiary" id ="currentProjects">
+          <!--title :D-->
+          <div class="py-4 display-4 text-center p-4 bg-body-secondary">Current Projects</div>
+          <div class="container"> 
+            <div class="py-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-3S"> 
+              
+              <div class="col"> 
+                <div class="card shadow-sm rounded"> 
+                  <img src="assets/example_HTML.png" class="img-fluid rounded border-5 border-white" alt="html code of this site">
+                  <div class="card-body"> 
+                    <p class="card-text">This website, Other projects will be added just getting it up on domain</p>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> 
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!--dissertation--><!--
+              <div class="col"> 
+                <div class="card shadow-sm rounded"> 
+                  <img src="assets/example_HTML.png" class="img-fluid rounded border-5 border-white" alt="html code of this site">
+                  <div class="card-body"> 
+                    <p class="card-text">This website, Other projects will be added just getting it up on domain</p>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> 
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+<!--group game
+              <div class="col"> 
+                <div class="card shadow-sm rounded"> 
+                  <img src="assets/example_HTML.png" class="img-fluid rounded border-5 border-white" alt="html code of this site">
+                  <div class="card-body"> 
+                    <p class="card-text">This website, Other projects will be added just getting it up on domain</p>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> 
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>-->
+          </div>
+  
+      </section>
+
+      <!--projects-->
+      <section id = "pastProjects">
+                  <!--title :D-->
+        <div class="py-4 display-4 text-center p-4 bg-body-secondary">Past Projects</div>
+        <div class="container"> 
+          <!--horizontal card from website-->
+          <!--this is each project description--> 
+          <!--I would like to develop these so the cards slide into an image button or image backdrop on mobile.-->
+          
+          <!--Octopie-->
+          <div class="row p-5">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Octopie - Y2 group project</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="assets/octopie.png" class="img-fluid rounded-start" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--card 2-->
+          <div class="row p-5">
+            <div class="card">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src=".." class="rounded-start" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            <!--do cards-->
+          </div>
+        </div>
+      </section>
+      
+      <!--further contact detes-->
+<
+                  
+
+
+    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
+
