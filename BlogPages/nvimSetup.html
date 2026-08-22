@@ -1,10 +1,20 @@
-<html lang="en">
+<!DOCTYPE html>
+
+<!--with help from https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR - netninja-->
+
+<!--12 collum grid system -> width = 1-12 collums in width-->
+<!--data-bs-theme="dark"-->
+<html lang="en" data-bs-theme="dark"></html>
+<link type="text/css" id="dark-mode" rel="stylesheet" href=""  >
+<style type="text/css" id="dark-mode-custom-style"></style>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--link href="css/custom.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../css/catppuccin-mocha.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <script src="https://kit.fontawesome.com/0d7d1472d3.js" crossorigin="anonymous"></script> 
     <title>Robert Lane Portfolio</title>
     <style>
       section{
@@ -14,14 +24,14 @@
 
 
   </head>
-  <body>
+    <body>  
       <!--large page show email linkding maybe insta?-->
       <!--navbar-->
-      <nav class="navbar navbar-expand-md"><!--expands to no dropdown frin medium size screens-->
+      <nav class="navbar navbar-expand-md"><!--expands to no dropdown from medium size screens-->
         <div class="container-xxl">
           <a href="#intro" class="navbar-brand">
             <span class="fw-bold text-secondary text-wrap">
-              Robert Lane - computing student at Falmouth university
+              Robert Lane - Computer Science Student at Falmouth University
             </span>
           </a>
 
@@ -32,18 +42,17 @@
           </button>
 
             <!--navbar links-->
-          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+          <div class="collapse navbar-collapse justify-content-end align-center text-ctp-peach" id="main-nav">
             <ul class="nav nav-underline">
               <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="assets/RobLaneCV.pdf" target="_blank">CV</a>
+                <a class="nav-link" href="../assets/RobLaneCV.pdf" target="_blank">CV</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../aboutMe.html">About Me</a>
               </li>
-              
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects</a>
                 <ul class="dropdown-menu">
@@ -56,16 +65,16 @@
                   <li><a class="dropdown-item" href="EotNH.html">Escape of the Nuclear Hamster</a></li>
                   <li><a class="dropdown-item" href="CylinderWars2Blog.html">Cylinder Wars 2</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="nvimSetup.html">Nvim Set-up</a></li>
+                  <li><a class="dropdown-item active" href="nvimSetup.html">Nvim Set-up</a></li>
                 </ul>
               </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#Contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://linkedin.com/in/robert-alokmoy-lane"> <i class="devicon-linkedin-plain colored"></i> </a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#Contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://linkedin.com/in/robert-alokmoy-lane"> <i class="fa-brands fa-linkedin fa-xl"></i> </a>
+              </li>
             </ul>
           <!--navbar links-->
           </div>

@@ -1,0 +1,248 @@
+/* Catppuccin Mocha Theme for Bootstrap 5 */
+
+/* Color Variables */
+:root {
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peachL: #fe640b;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+  --ctp-text: #cdd6f4;
+  --ctp-subtext1: #bac2de;
+  --ctp-subtext0: #a6adc8;
+  --ctp-overlay2: #9399b2;
+  --ctp-overlay1: #7f849c;
+  --ctp-overlay0: #6c7086;
+  --ctp-surface2: #585b70;
+  --ctp-surface1: #45475a;
+  --ctp-surface0: #313244;
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+}
+
+/* Bootstrap Color Overrides */
+:root {
+  --bs-primary: var(--ctp-peach);
+  --bs-secondary: var(--ctp-surface1);
+  --bs-success: var(--ctp-green);
+  --bs-info: var(--ctp-sky);
+  --bs-warning: var(--ctp-yellow);
+  --bs-danger: var(--ctp-red);
+  --bs-light: var(--ctp-surface0);
+  --bs-dark: var(--ctp-crust);
+
+  --bs-primary-rgb: 137, 180, 250;
+  --bs-secondary-rgb: 69, 71, 90;
+  --bs-success-rgb: 166, 227, 161;
+  --bs-info-rgb: 137, 220, 235;
+  --bs-warning-rgb: 249, 226, 175;
+  --bs-danger-rgb: 243, 139, 168;
+  --bs-light-rgb: 49, 50, 68;
+  --bs-dark-rgb: 17, 17, 27;
+
+  --bs-body-bg: var(--ctp-base);
+  --bs-body-color: var(--ctp-text);
+  --bs-border-color: var(--ctp-surface0);
+  --bs-link-color: var(--ctp-peach);
+  --bs-link-hover-color: var(--ctp-peachL);
+}
+
+/* Base Styles */
+body {
+  background-color: var(--ctp-base);
+  color: var(--ctp-text);
+}
+
+.bg-body-secondary {
+  --bs-bg-opacity: 1;
+  background-color: var(--ctp-mantle) !important;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: var(--ctp-crust) !important;
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: var(--ctp-text) !important;
+}
+
+.text-secondary {
+  --bs-text-opacity: 1;
+  color: var(--ctp-overlay1) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--ctp-peach);
+  border-color: var(--ctp-peach);
+  color: var(--ctp-crust);
+}
+
+.btn-primary:hover {
+  background-color: var(--ctp-peachL);
+  border-color: var(--ctp-peachL);
+  color: var(--ctp-crust);
+}
+
+.btn-secondary {
+  background-color: var(--ctp-surface1);
+  border-color: var(--ctp-surface1);
+  color: var(--ctp-text);
+}
+
+.btn-success {
+  background-color: var(--ctp-green);
+  border-color: var(--ctp-green);
+  color: var(--ctp-crust);
+}
+
+.btn-danger {
+  background-color: var(--ctp-red);
+  border-color: var(--ctp-red);
+  color: var(--ctp-crust);
+}
+
+.btn-warning {
+  background-color: var(--ctp-yellow);
+  border-color: var(--ctp-yellow);
+  color: var(--ctp-crust);
+}
+
+.btn-info {
+  background-color: var(--ctp-sky);
+  border-color: var(--ctp-sky);
+  color: var(--ctp-crust);
+}
+
+/* Cards */
+.card {
+  background-color: var(--ctp-mantle);
+  border-color: var(--ctp-surface0);
+  color: var(--ctp-text);
+}
+
+.card-header {
+  background-color: var(--ctp-surface0);
+  border-bottom-color: var(--ctp-surface1);
+  color: var(--ctp-text);
+}
+
+/* Forms */
+.form-control {
+  background-color: var(--ctp-surface0);
+  border-color: var(--ctp-surface1);
+  color: var(--ctp-text);
+}
+
+.form-control:focus {
+  background-color: var(--ctp-surface0);
+  border-color: var(--ctp-peach);
+  color: var(--ctp-text);
+  box-shadow: 0 0 0 0.25rem rgba(137, 180, 250, 0.25);
+}
+
+.form-control::placeholder {
+  color: var(--ctp-overlay0);
+}
+
+.form-select {
+  background-color: var(--ctp-surface0);
+  border-color: var(--ctp-surface1);
+  color: var(--ctp-text);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--ctp-mantle);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--ctp-text);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--ctp-peach);
+}
+
+/* Alerts */
+.alert-primary {
+  background-color: var(--ctp-peach);
+  border-color: var(--ctp-peach);
+  color: var(--ctp-crust);
+}
+
+.alert-success {
+  background-color: var(--ctp-green);
+  border-color: var(--ctp-green);
+  color: var(--ctp-crust);
+}
+
+.alert-danger {
+  background-color: var(--ctp-red);
+  border-color: var(--ctp-red);
+  color: var(--ctp-crust);
+}
+
+.alert-warning {
+  background-color: var(--ctp-yellow);
+  border-color: var(--ctp-yellow);
+  color: var(--ctp-crust);
+}
+
+/* Tables */
+.table {
+  color: var(--ctp-text);
+}
+
+.table-dark {
+  background-color: var(--ctp-mantle);
+  color: var(--ctp-text);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--ctp-surface0);
+}
+
+/* Modal */
+.modal-content {
+  background-color: var(--ctp-mantle);
+  border-color: var(--ctp-surface0);
+}
+
+.modal-header {
+  border-bottom-color: var(--ctp-surface0);
+}
+
+.modal-footer {
+  border-top-color: var(--ctp-surface0);
+}
+
+/* Badges */
+.badge {
+  color: var(--ctp-crust);
+}
+
+.badge.bg-primary {
+  background-color: var(--ctp-peach) !important;
+}
+
+.badge.bg-success {
+  background-color: var(--ctp-green) !important;
+}
+
+.badge.bg-danger {
+  background-color: var(--ctp-red) !important;
+}
